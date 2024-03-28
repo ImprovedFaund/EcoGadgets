@@ -1,0 +1,201 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #bdde84;
+}
+  
+header{
+    background-color: #263410;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+  
+li{
+    list-style: none;
+}
+  
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 70px;
+}
+
+hr {
+    margin: 15px 20px;
+    border-top: 1px solid #263410;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+  
+.container{
+    max-width: 1224px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-branding{
+    font-size: 2rem;
+}
+  
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+  
+.nav-link{
+    transition: 0.3s ease-out;
+}
+  
+.nav-link:hover{
+    color: #0dabea;
+}
+  
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+  
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.about {
+    background-color: #263410;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.background-img {
+    border-radius: 0px 0px 15px 15px;
+}
+
+.box {
+    background-color: #263410;
+    border-radius: 0px 0px 15px 15px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    opacity: 90%;
+}
+
+.box-model {
+    display: grid;
+}
+
+.content {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.swap {
+    flex-direction: row-reverse;
+}
+
+.product-img {
+    border-radius: 15px;
+}
+
+#product-1 {
+    background-color: #bdde84;
+}
+
+#product-2 {
+    background-color: #b3d380;
+}
+
+#product-3 {
+    background-color: #bdde84;
+}
+
+#product-4 {
+    background-color: #b3d380;
+}
+
+@media(width < 640px){
+    .hamburger {
+        display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #263410;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+  
+    .nav-item{
+        margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .product-img {
+        width: 50%;
+    }
+}
+
+@media (width < 1000px) {
+    .content {
+        width: 80%;
+    }
+}
