@@ -37,6 +37,15 @@ h2 {
     text-align: center;
     margin: 20px 0px;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
+}
   
 .container{
     max-width: 1224px;
@@ -91,6 +100,10 @@ h2 {
     background-color: white;
 }
 
+.main-contact {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg");
+}
+
 .about {
     background-color: #263410;
     border-radius: 0px 0px 15px 15px;
@@ -119,10 +132,11 @@ h2 {
 
 .content {
     width: 60%;
-    margin: 30px auto;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 30px;
 }
 
 .swap {
@@ -131,6 +145,47 @@ h2 {
 
 .product-img {
     border-radius: 15px;
+}
+
+.review {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    background-color: #263410;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.contact:hover {
+    background-color: #445c1d;
+    transition: 0.3s;
+}
+
+.contact-img {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form-tag {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.footer {
+    background-color: #263410;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
 #product-1 {
@@ -147,6 +202,43 @@ h2 {
 
 #product-4 {
     background-color: #b3d380;
+}
+
+#vid-desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#name, #email {
+    width: 400px;
+    height: 18px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#message {
+    width: 400px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#submit {
+    background-color: #263410;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #445c1d;
+    transition: 0.3s;
 }
 
 @media(width < 640px){
