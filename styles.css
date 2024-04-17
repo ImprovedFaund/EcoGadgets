@@ -241,7 +241,9 @@ form {
     transition: 0.3s;
 }
 
-@media(width < 640px){
+/* About */
+
+@media (width < 1200px) {
     .hamburger {
         display: block;
     }
@@ -275,7 +277,9 @@ form {
     .nav-menu.active{
         left: 0;
     }
+}
 
+@media(width < 640px){
     .content {
         width: 90%;
         flex-direction: column;
@@ -290,4 +294,85 @@ form {
     .content {
         width: 80%;
     }
+}
+
+.hero {
+    width: 100%;
+}
+
+.company {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission {
+    margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.why {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.selection {
+    margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.practices {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+address {
+    text-align: center;
+    margin: 20px;
+}
+
+
+.toys {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.toys-intro {
+    text-align: center;
+    margin: 15px;
+}
+
+.toys-benefits {
+    text-align: center;
+    margin: 15px;
+}
+
+.toys-why {
+    text-align: center;
+    margin: 15px;
+}
+
+.customers {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
 }
